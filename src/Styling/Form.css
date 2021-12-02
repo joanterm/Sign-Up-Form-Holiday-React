@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("https://images.unsplash.com/photo-1512916206820-bd6d503c003e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-image: url("../Styling/holiday-background.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -12,33 +12,35 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Raleway', sans-serif; 
+}
+
+p {
+    font-weight: 500;
 }
 
 .form-container {
     width: 500px;
     max-width: 90%;
-    background-color: rgb(228, 228, 228, 0.9);
+    background-color: rgb(228, 228, 228, 0.7);
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3em;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.6) 
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3) 
 }
 
 .form {
     display: flex;
     flex-direction: column;  
-    max-width:300px;
+    max-width: 300px;
     width: 100%;
-    margin-bottom: 1em;
 }
 
 input {
     margin-bottom: 2em;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
     text-align: inherit;
     padding: 1em;
 }
@@ -49,13 +51,19 @@ button {
     letter-spacing: 1px;
     padding: 1em 2em;
     cursor: pointer;
-    background-color: #bfbfbf;
+    background-color: #de397a;
+    color: #ffffff;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
 }
 
-.form--marketing {
-
+button:hover {
+    background-color: #c42162;
 }
+
 
 .form--marketing > input {
+    margin-bottom: 0;
     margin-right: 10px;
 }
